@@ -1,0 +1,3 @@
+#!/bin/bash
+cd ./files
+python -m xtts_api_server & ./start.sh
