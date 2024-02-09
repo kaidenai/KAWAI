@@ -7,9 +7,8 @@ if [ -d ./files ];then
     git stash pop
 else
     #install SillyTavern for a base
-    git clone https://github.com/SillyTavern/SillyTavern.git
+    git clone https://github.com/SillyTavern/SillyTavern.git ./files
     #install SIWAI
-    mv ./SillyTavern ./files
     find ./files/ -type f -exec sed -i -e 's/SillyTavern/SIWAI/g' {} \;
     cp -r ./public/ ./files/
 
