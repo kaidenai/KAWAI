@@ -6,9 +6,11 @@ if [ -d ./files ];then
     git pull
     git stash pop
 else
+    #install SillyTavern for a base
     git clone https://github.com/SillyTavern/SillyTavern.git
+    #install KAWAI
     mv ./SillyTavern ./files
-    find ./files/ -type f -exec sed -i -e 's/SillyTavern/KaidenAI/g' {} \;
+    find ./files/ -type f -exec sed -i -e 's/SillyTavern/KAWAI/g' {} \;
     cp -r ./public/ ./files/
 
 fi
