@@ -1,3 +1,4 @@
 #!/bin/bash
+source ./siwai-config.sh
 cd ./files
-./start.sh
+./start.sh && $ooba
