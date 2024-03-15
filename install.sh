@@ -9,7 +9,7 @@ else
     #install SillyTavern for a base
     git clone https://github.com/SillyTavern/SillyTavern.git ./files
     #install SIWAI
-    find ./files/ -type f -exec sed -i -e 's/SillyTavern/SIWAI/g' {} \;
+    find ./files/public/ -type f -exec sed -i -e 's/SillyTavern/SIWAI/g' {} \;
     cp -r ./public/ ./files/
 
 fi
