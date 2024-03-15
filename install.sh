@@ -10,6 +10,7 @@ else
     git clone https://github.com/SillyTavern/SillyTavern.git ./files
     #install SIWAI
     find ./files/public/ -type f -exec sed -i -e 's/SillyTavern/SIWAI/g' {} \;
+    find ./files/public/scripts/extensions/ -type f -exec sed -i -e 's/SIWAI/SillyTavern/g' {} \;
     cp -r ./public/ ./files/
 
 fi
